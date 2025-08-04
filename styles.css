@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.chat-container {
+  height: 90vh; /* Explicit height for scroll management */
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0 0 20px rgba(0,255,255,0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  font-size: 24px;
+  color: #00ffff;
+  text-align: center;
+  margin-bottom: 15px;
+  text-shadow: 0 0 5px #00ffff;
+}
+
+.chat-box {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.3);
+  margin-bottom: 15px;
+}
+
+.chat-box::-webkit-scrollbar {
+  width: 6px;
+}
+.chat-box::-webkit-scrollbar-thumb {
+  background: #00ffff;
+  border-radius: 10px;
+}
+.chat-box::-webkit-scrollbar-track {
+ background: rgba(255, 255, 255, 0.05);
+}
+
+.message {
+  margin: 10px 0;
+  line-height: 1.4;
+}
+
+.user-message {
+  text-align: right;
+  color: #aaffaa;
+}
+
+.bot-message {
+  text-align: left;
+  color: #ffaaee;
+}
+
+.chat-input {
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  outline: none;
+  font-family: inherit;
+}
+
+.chat-input button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  background: #00ffff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #00ffff;
+}
+
+.chat-input button:hover {
+  background: #00e6e6;
+  box-shadow: 0 0 15px #00e6e6;
+}
