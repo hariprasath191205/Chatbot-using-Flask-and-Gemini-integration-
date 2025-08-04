@@ -4,3 +4,4 @@ The Futuristic AI Chatbot is an intelligent conversational web assistant that al
 The chatbot accepts natural language queries from users, forwards them to the backend, and fetches intelligent replies using the Gemini large language model. It is designed with a dark futuristic UI theme and supports smooth user interaction with dynamic message rendering.
 
 This project demonstrates the powerful fusion of modern web development with generative AI, enabling real-time communication between users and a smart assistant.  
+create a .env file with MY_API_KEY=your real google gemini api key here
